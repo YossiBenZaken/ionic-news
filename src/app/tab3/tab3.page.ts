@@ -1,3 +1,4 @@
+import { Article } from './../models/article.model';
 import { Component } from '@angular/core';
 
 @Component({

@@ -1,9 +1,18 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>news-single</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title style="direction: rtl;">{{article.title}}</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-
+  <ion-card>
+    <ion-img [src]="article.urlToImage"></ion-img>
+    <ion-card-content style="direction: rtl;">
+      <ion-card-title>{{article.title}}</ion-card-title>
+      <p>{{article.description}}</p>
+    </ion-card-content>
+  </ion-card>
 </ion-content>
